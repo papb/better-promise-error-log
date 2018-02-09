@@ -1,0 +1,30 @@
+{
+  "name": "better-promise-error-log",
+  "version": "1.0.0",
+  "description": "Better error logs for unhandled errors in promises",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/papb/better-promise-error-log.git"
+  },
+  "keywords": [
+    "promise",
+    "unhandled",
+    "error",
+    "log",
+    "better"
+  ],
+  "author": "Pedro Augusto de Paula Barbosa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/papb/better-promise-error-log/issues"
+  },
+  "homepage": "https://github.com/papb/better-promise-error-log#readme",
+  "dependencies": {
+    "chalk": "^2.3.0"
+  }
+}

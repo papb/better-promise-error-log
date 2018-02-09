@@ -11,8 +11,7 @@ better-promise-error-log
 
 Better error logs for unhandled errors in promises.
 
-How to use
-----------
+# How to use
 
 ```
 npm install --save better-promise-error-log
@@ -26,7 +25,7 @@ require("better-promise-error-log");
 
 And then automatically your whole program will have better error logs for unhandled errors in promises. Tested with native promises and with Bluebird promises.
 
-# Example:
+# Example
 
 ```javascript
 // Uncomment line below to see the difference
@@ -48,8 +47,7 @@ With `require("better-promise-error-log")`:
 
 [![In node, with better-promise-error-log][node-with]][node-with]
 
-License
---------------------------------------
+# License
 
 MIT
 

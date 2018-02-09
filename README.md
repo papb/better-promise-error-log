@@ -11,7 +11,15 @@ better-promise-error-log
 
 Better error logs for unhandled errors in promises.
 
-# How to use
+# How to use in browsers
+
+Simply include browser.js in your entry point:
+
+```html
+<script src="https://rawgit.com/papb/better-promise-error-log/1.0.2/browser.js" />
+```
+
+# How to use in node
 
 ```
 npm install --save better-promise-error-log
@@ -25,7 +33,7 @@ require("better-promise-error-log");
 
 And then automatically your whole program will have better error logs for unhandled errors in promises. Tested with native promises and with Bluebird promises.
 
-# Example
+# Example (in node)
 
 ```javascript
 // Uncomment line below to see the difference

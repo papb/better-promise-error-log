@@ -1,6 +1,6 @@
 {
   "name": "better-promise-error-log",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Better error logs for unhandled errors in promises",
   "main": "index.js",
   "repository": {

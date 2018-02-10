@@ -16,7 +16,7 @@ Better error logs for unhandled errors in promises.
 Simply include browser.js in your entry point:
 
 ```html
-<script src="https://rawgit.com/papb/better-promise-error-log/1.0.2/browser.js" />
+<script src="https://rawgit.com/papb/better-promise-error-log/1.0.3/browser.js" integrity="sha384-qKHxyYX3WFZtxdU+Dg47WG8W6HRwqyzPts/1rgC133RfFVhoFgykD8QKzViQDHuX" crossorigin="anonymous"></script>
 ```
 
 # How to use in node
@@ -55,6 +55,13 @@ With `require("better-promise-error-log")`:
 
 [![In node, with better-promise-error-log][node-with]][node-with]
 
+# Changelog
+
+- 1.0.3: improve readme
+- 1.0.2: added browser support
+- 1.0.1: improve readme
+- 1.0.0: initial version
+
 # License
 
 MIT
@@ -66,5 +73,5 @@ MIT
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg
 [license-url]: LICENSE
 
-[node-without]: https://i.imgur.com/Z4xdj02.png
-[node-with]: https://i.imgur.com/ahe4AFf.png
+[node-without]: https://i.imgur.com/pIxLmGA.png
+[node-with]: https://i.imgur.com/I88fPsO.png

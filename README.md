@@ -45,6 +45,7 @@ And then automatically your whole program will have better error logs for unhand
 Promise.resolve().then(() => {
     var err = new TypeError("My message");
     err.someField = { something: "whoops" };
+    TypeError.prototype.test = "oops!";
     throw err;
 }).then(() => {
     console.log("This should not execute.");
@@ -82,9 +83,9 @@ With `better-promise-error-log`:
 # Changelog
 
 - 1.1.0:
-    * much better logs with more things
-    * fix log not working in browsers with bluebird
-    * added browser example to readme
+  - much better logs with more things
+  - fix log not working in browsers with bluebird
+  - added browser example to readme
 - 1.0.3: improve readme
 - 1.0.2: added browser support
 - 1.0.1: improve readme

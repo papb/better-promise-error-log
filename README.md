@@ -45,7 +45,7 @@ And then automatically your whole program will have better error logs for unhand
 Promise.resolve().then(() => {
     var err = new TypeError("My message");
     err.someField = { something: "whoops" };
-    TypeError.prototype.test = "oops!";
+    TypeError.prototype.test = "oops!"; // Just to show it navigates the prototype chain
     throw err;
 }).then(() => {
     console.log("This should not execute.");
@@ -66,6 +66,7 @@ With `require("better-promise-error-log")`:
 Promise.resolve().then(() => {
     var err = new TypeError("My message");
     err.someField = { something: "whoops" };
+    TypeError.prototype.test = "oops!"; // Just to show it navigates the prototype chain
     throw err;
 }).then(() => {
     console.log("This should not execute.");
@@ -105,5 +106,5 @@ MIT
 [node-without]: https://i.imgur.com/J1xgzga.png
 [node-with]: https://i.imgur.com/yB6jejE.png
 
-[browser-without]: https://i.imgur.com/1cAx63d.png
+[browser-without]: https://i.imgur.com/CjGMBN5.png
 [browser-with]: https://i.imgur.com/J1osMzc.png

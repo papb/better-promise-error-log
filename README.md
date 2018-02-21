@@ -13,6 +13,8 @@ Better error logs for unhandled errors in promises.
 
 Tested with native promises and Bluebird promises.
 
+This module uses the sibling module, [jsonify-error][jsonify-error], to prepare the error for logging.
+
 # How to use in browsers
 
 Simply include browser.js in your entry point:
@@ -108,3 +110,5 @@ MIT
 
 [browser-without]: https://i.imgur.com/CjGMBN5.png
 [browser-with]: https://i.imgur.com/J1osMzc.png
+
+[jsonify-error]: https://npmjs.org/package/jsonify-error

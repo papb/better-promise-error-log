@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/papb/better-promise-error-log.git"
   },
+  "scripts": {
+    "make_browser": "browserify make_browser.js -o browser.js"
+  },
   "keywords": [
     "promise",
     "unhandled",
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/papb/better-promise-error-log#readme",
   "dependencies": {
-    "chalk": "^2.3.0"
+    "chalk": "^2.3.0",
+    "jsonify-error": "^1.0.0"
   }
 }

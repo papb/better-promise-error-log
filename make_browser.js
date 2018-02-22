@@ -1,5 +1,4 @@
 const jsonifyError = require("jsonify-error");
-window.jsonifyError = jsonifyError;
 window.addEventListener("unhandledrejection", function(ev) {
     var reason = undefined;
     

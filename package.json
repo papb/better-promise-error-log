@@ -25,6 +25,6 @@
   "homepage": "https://github.com/papb/better-promise-error-log#readme",
   "dependencies": {
     "chalk": "^2.3.0",
-    "jsonify-error": "^1.0.0"
+    "jsonify-error": "^1.1.1"
   }
 }

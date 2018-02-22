@@ -113,9 +113,9 @@ MIT
 [license-url]: LICENSE
 
 [node-without]: https://i.imgur.com/J1xgzga.png
-[node-with]: https://i.imgur.com/yB6jejE.png
+[node-with]: https://i.imgur.com/YC4DmO6.png
 
 [browser-without]: https://i.imgur.com/CjGMBN5.png
-[browser-with]: https://i.imgur.com/J1osMzc.png
+[browser-with]: https://i.imgur.com/Cb4xBP1.png
 
 [jsonify-error]: https://npmjs.org/package/jsonify-error

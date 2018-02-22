@@ -20,7 +20,7 @@ This module uses the sibling module, [jsonify-error][jsonify-error], to prepare 
 Simply include browser.js in your entry point:
 
 ```html
-<script src="https://rawgit.com/papb/better-promise-error-log/1.2.0/browser.js"></script>
+<script src="https://rawgit.com/papb/better-promise-error-log/1.3.0/browser.js" integrity="sha384-ZVQhd0Eb1hbZul+ieblOtIyhbAe7n2XDLqwT+H+e2sFC2CcVk1jFv7LfxffbZT0T" crossorigin="anonymous"></script>
 ```
 
 Note: In firefox, better-promise-error-log only works alongside bluebird.

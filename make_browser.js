@@ -1,3 +1,4 @@
+"use strict";
 const jsonifyError = require("jsonify-error");
 window.addEventListener("unhandledrejection", function(ev) {
     var reason = undefined;

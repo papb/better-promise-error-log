@@ -1,3 +1,4 @@
+"use strict";
 // Uncomment line below to see the difference
 require("./index.js");
 Promise.resolve().then(() => {

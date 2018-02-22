@@ -1,7 +1,5 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 const jsonifyError = require("jsonify-error");
-window.jsonifyError = jsonifyError;
-console.log('uai');
 window.addEventListener("unhandledrejection", function(ev) {
     var reason = undefined;
     
@@ -24,20 +22,25 @@ window.addEventListener("unhandledrejection", function(ev) {
 
 function jsonifyError(error) {
     var superclasses = [];
-    var temp = Object.getPrototypeOf(Object.getPrototypeOf(error));
+    var temp = Object.getPrototypeOf(error);
+    if (temp !== null) temp = Object.getPrototypeOf(temp);
     while (temp !== null) {
         superclasses.push(temp.constructor.name);
         temp = Object.getPrototypeOf(temp);
     }
     var wrappedError = {};
-    wrappedError.name = error.name;
-    wrappedError.message = error.message;
+    wrappedError.name = error.name || "<no name available>";
+    wrappedError.message = error.message || "<no message available>";
     wrappedError.superclasses = superclasses;
     wrappedError.enumerableFields = {};
     for (let x in error) {
         wrappedError.enumerableFields[x] = error[x];
     }
-    wrappedError.stack = error.stack.split('\n').map(x => x.replace(/^\s+/, ""));
+    if (typeof error.stack === "string") {
+        wrappedError.stack = error.stack.split('\n').map(x => x.replace(/^\s+/, ""));
+    } else {
+        wrappedError.stack = error.stack || "<no stack trace available>";
+    }
     return wrappedError;
 }
 

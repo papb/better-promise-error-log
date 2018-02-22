@@ -83,20 +83,6 @@ With `better-promise-error-log`:
 
 [![In browser, with better-promise-error-log][browser-with]][browser-with]
 
-# Changelog
-
-- 1.2.0:
-  - even better logs
-  - now uses [jsonify-error][jsonify-error] to prepare errors for logging
-- 1.1.0:
-  - much better logs with more things
-  - fix log not working in browsers with bluebird
-  - added browser example to readme
-- 1.0.3: improve readme
-- 1.0.2: added browser support
-- 1.0.1: improve readme
-- 1.0.0: initial version
-
 # Contributing
 
 Any contribution is very welcome. Feel free to open an issue about anything: questions, suggestions, feature requests, bugs, improvements, mistakes, whatever. I will be always looking.

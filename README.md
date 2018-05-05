@@ -89,7 +89,7 @@ Any contribution is very welcome. Feel free to open an issue about anything: que
 
 # License
 
-MIT
+MIT (c) Pedro Augusto de Paula Barbosa
 
 [npm-url]: https://npmjs.org/package/better-promise-error-log
 [npm-version-image]: https://img.shields.io/npm/v/better-promise-error-log.svg

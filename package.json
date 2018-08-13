@@ -11,9 +11,9 @@
   },
   "scripts": {
     "build-dev-es6-watch": "watchify browser-entrypoint.js --outfile=\"dist/better-promise-error-log.js\" --verbose --debug",
-    "build-dev-es6": "browserify --debug browser-entrypoint.js -o dist/better-promise-error-log.js",
+    "build-dev-es6": "browserify --no-bf --debug browser-entrypoint.js -o dist/better-promise-error-log.js",
     "build-es6": "npm run build-dev-es6 && uglifyjs dist/better-promise-error-log.js --compress --mangle --source-map -o dist/better-promise-error-log.min.js",
-    "build-dev-es5": "browserify --debug browser-entrypoint.js -o dist/better-promise-error-log.es5.js -t [ babelify --presets [ \"babel-preset-env\" ] ]",
+    "build-dev-es5": "browserify --no-bf --debug browser-entrypoint.js -o dist/better-promise-error-log.es5.js -t [ babelify --presets [ \"babel-preset-env\" ] ]",
     "build-es5": "npm run build-dev-es5 && uglifyjs dist/better-promise-error-log.es5.js --compress --mangle --source-map -o dist/better-promise-error-log.es5.min.js",
     "build": "npm run build-es6 && npm run build-es5",
     "lint": "eslint ."

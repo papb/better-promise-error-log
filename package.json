@@ -3,13 +3,26 @@
   "version": "1.3.0",
   "description": "Better error logs for unhandled errors in promises",
   "main": "index.js",
+  "browser": "browser-entrypoint.js",
+  "jsdelivr": "dist/better-promise-error-log.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/papb/better-promise-error-log.git"
   },
   "scripts": {
-    "make_browser": "browserify make_browser.js -o browser.js"
+    "build-dev-es6-watch": "watchify browser-entrypoint.js --outfile=\"dist/better-promise-error-log.js\" --verbose --debug",
+    "build-dev-es6": "browserify --debug browser-entrypoint.js -o dist/better-promise-error-log.js",
+    "build-es6": "npm run build-dev-es6 && uglifyjs dist/better-promise-error-log.js --compress --mangle --source-map -o dist/better-promise-error-log.min.js",
+    "build-dev-es5": "browserify --debug browser-entrypoint.js -o dist/better-promise-error-log.es5.js -t [ babelify --presets [ \"babel-preset-env\" ] ]",
+    "build-es5": "npm run build-dev-es5 && uglifyjs dist/better-promise-error-log.es5.js --compress --mangle --source-map -o dist/better-promise-error-log.es5.min.js",
+    "build": "npm run build-es6 && npm run build-es5",
+    "lint": "eslint ."
   },
+  "files": [
+    "dist",
+    "index.js",
+    "browser-entrypoint.js"
+  ],
   "keywords": [
     "promise",
     "unhandled",
@@ -24,7 +37,16 @@
   },
   "homepage": "https://github.com/papb/better-promise-error-log#readme",
   "dependencies": {
-    "chalk": "^2.3.0",
-    "jsonify-error": "^1.1.1"
+    "chalk": "^2.4.1",
+    "jsonify-error": "^1.2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "eslint": "^5.2.0",
+    "uglify-es": "^3.3.9",
+    "watchify": "^3.11.0"
   }
 }

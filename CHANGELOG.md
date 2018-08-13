@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- ## [Unreleased] -->
 
+## [1.4.0] - 2018-08-12
+### Changed
+- Reorganized & modernized everthing
+- Updated dependencies dependency
+- Added minified & es5 builds
+- Start using jsDelivr
+
 ## [1.3.0] - 2018-02-22
 ### Changed
 - Updated jsonify-error dependency (especially important for browser support)
@@ -39,7 +46,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Initial version.
 
-[Unreleased]: https://github.com/papb/jsonify-error/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/papb/jsonify-error/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/papb/jsonify-error/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/papb/jsonify-error/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/papb/jsonify-error/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/papb/jsonify-error/compare/v1.0.3...v1.1.0

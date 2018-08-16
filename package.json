@@ -1,6 +1,6 @@
 {
   "name": "better-promise-error-log",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Better error logs for unhandled errors in promises",
   "main": "index.js",
   "jsdelivr": "dist/better-promise-error-log.js",

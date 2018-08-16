@@ -14,7 +14,9 @@
     "build-es6": "npm run build-dev-es6 && uglifyjs dist/better-promise-error-log.js --compress --mangle --source-map -o dist/better-promise-error-log.min.js",
     "build-dev-es5": "browserify --no-bf --debug browser-entrypoint.js -o dist/better-promise-error-log.es5.js -t [ babelify --presets [ \"babel-preset-env\" ] ]",
     "build-es5": "npm run build-dev-es5 && uglifyjs dist/better-promise-error-log.es5.js --compress --mangle --source-map -o dist/better-promise-error-log.es5.min.js",
-    "build": "npm run build-es6 && npm run build-es5",
+    "build": "npm run build-es6 && npm run build-es5 && npm run crlf",
+    "crlf": "node helpers/ensure-crlf.js",
+    "sri": "node helpers/sri-sha384.js",
     "lint": "eslint ."
   },
   "files": [
@@ -37,7 +39,7 @@
   "homepage": "https://github.com/papb/better-promise-error-log#readme",
   "dependencies": {
     "chalk": "^2.4.1",
-    "jsonify-error": "^1.2.2"
+    "jsonify-error": "^1.3.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -45,6 +47,8 @@
     "babelify": "^8.0.0",
     "browserify": "^16.2.2",
     "eslint": "^5.2.0",
+    "fs-jetpack": "^2.1.0",
+    "sha.js": "^2.4.11",
     "uglify-es": "^3.3.9",
     "watchify": "^3.11.0"
   }

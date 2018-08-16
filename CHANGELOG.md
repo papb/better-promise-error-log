@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- ## [Unreleased] -->
 
+## [1.4.1] - 2018-08-15
+### Changed
+- Stop using `browser` field on `package.json` (see [jsonify-error#5](https://github.com/papb/jsonify-error/issues/5))
+- Add SRI scripts & SRI to README.md
+
 ## [1.4.0] - 2018-08-12
 ### Changed
 - Reorganized & modernized everthing
@@ -46,7 +51,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Initial version.
 
-[Unreleased]: https://github.com/papb/jsonify-error/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/papb/jsonify-error/compare/v1.4.1...HEAD
+[1.4.1]: https://github.com/papb/jsonify-error/compare/v1.4.0...v1.4.1
 [1.4.0]: https://github.com/papb/jsonify-error/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/papb/jsonify-error/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/papb/jsonify-error/compare/v1.1.0...v1.2.0

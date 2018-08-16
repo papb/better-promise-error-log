@@ -3,7 +3,6 @@
   "version": "1.4.0",
   "description": "Better error logs for unhandled errors in promises",
   "main": "index.js",
-  "browser": "browser-entrypoint.js",
   "jsdelivr": "dist/better-promise-error-log.js",
   "repository": {
     "type": "git",

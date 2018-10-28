@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- ## [Unreleased] -->
 
+## [1.4.2] - 2018-10-27
+### Changed
+- Updated `jsonify-error` to 1.4.1
+
 ## [1.4.1] - 2018-08-15
 ### Changed
 - Stop using `browser` field on `package.json` (see [jsonify-error#5](https://github.com/papb/jsonify-error/issues/5))
@@ -51,7 +55,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Initial version.
 
-[Unreleased]: https://github.com/papb/jsonify-error/compare/v1.4.1...HEAD
+[Unreleased]: https://github.com/papb/jsonify-error/compare/v1.4.2...HEAD
+[1.4.1]: https://github.com/papb/jsonify-error/compare/v1.4.1...v1.4.2
 [1.4.1]: https://github.com/papb/jsonify-error/compare/v1.4.0...v1.4.1
 [1.4.0]: https://github.com/papb/jsonify-error/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/papb/jsonify-error/compare/v1.2.0...v1.3.0

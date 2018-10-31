@@ -12,7 +12,10 @@ window.addEventListener("unhandledrejection", function(ev) {
 
     if (!reason) {
         console.error("better-promise-error-log error: unable to find error cause. Please open an issue on github: https://github.com/papb/better-promise-error-log/issues");
+    } else if (reason instanceof Error) {
+        console.error("Unhandled error in promise:", jsonifyError(reason));
     } else {
-        console.error("Unhandled Error in Promise: " + jsonifyError.asString(reason));
+        console.error("Unhandled rejection in promise:", reason);
     }
+
 });

@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- ## [Unreleased] -->
 
+## [1.4.3] - 2018-10-21
+### Changed
+- Fixed an error when rejection reason was not instanceof Error
+- Improved outputs
+
 ## [1.4.2] - 2018-10-27
 ### Changed
 - Updated `jsonify-error` to 1.4.1
@@ -55,7 +60,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Initial version.
 
-[Unreleased]: https://github.com/papb/jsonify-error/compare/v1.4.2...HEAD
+[Unreleased]: https://github.com/papb/jsonify-error/compare/v1.4.3...HEAD
+[1.4.2]: https://github.com/papb/jsonify-error/compare/v1.4.2...v1.4.3
 [1.4.1]: https://github.com/papb/jsonify-error/compare/v1.4.1...v1.4.2
 [1.4.1]: https://github.com/papb/jsonify-error/compare/v1.4.0...v1.4.1
 [1.4.0]: https://github.com/papb/jsonify-error/compare/v1.3.0...v1.4.0

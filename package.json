@@ -3,15 +3,18 @@
   "version": "1.4.3",
   "description": "Better error logs for unhandled errors in promises",
   "main": "index.js",
+  "browser": {
+    "./lib/better-promise-error-log.js": "./lib/better-promise-error-log-browser.js"
+  },
   "jsdelivr": "dist/better-promise-error-log.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/papb/better-promise-error-log.git"
   },
   "scripts": {
-    "build:es6": "browserify --debug browser-entrypoint.js -o dist/better-promise-error-log.js",
+    "build:es6": "browserify --debug index.js -o dist/better-promise-error-log.js",
     "build:es6-min": "uglifyjs dist/better-promise-error-log.js --compress --mangle --source-map -o dist/better-promise-error-log.min.js",
-    "build:es5": "browserify --debug browser-entrypoint.js -o dist/better-promise-error-log.es5.js -t [ babelify --presets [ \"babel-preset-env\" ] ]",
+    "build:es5": "browserify --debug index.js -o dist/better-promise-error-log.es5.js -t [ babelify --presets [ \"babel-preset-env\" ] ]",
     "build:es5-min": "uglifyjs dist/better-promise-error-log.es5.js --compress --mangle --source-map -o dist/better-promise-error-log.es5.min.js",
     "build:crlf": "node helpers/ensure-crlf.js",
     "build": "run-s build:*",
@@ -20,8 +23,8 @@
   },
   "files": [
     "dist",
-    "browser-entrypoint.js",
-    "index.js"
+    "index.js",
+    "lib"
   ],
   "keywords": [
     "promise",

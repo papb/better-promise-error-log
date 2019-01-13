@@ -27,7 +27,7 @@ This module uses the sibling module, [jsonify-error][jsonify-error], to prepare 
 For browsers, simply include one of the dists in your entry point, such as `dist/better-promise-error-log.js`. The dists are available in [jsDelivr](https://cdn.jsdelivr.net/npm/better-promise-error-log/):
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/better-promise-error-log@1.4.4/dist/better-promise-error-log.min.js" integrity="sha384-2zTt3rcgun4p/tqCX3/UZMGMlcyvM50Uc1I7qaAHyXqYqipdNbrgHGXb3P1djrP6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/better-promise-error-log@1.4.5/dist/better-promise-error-log.min.js" integrity="sha384-2zTt3rcgun4p/tqCX3/UZMGMlcyvM50Uc1I7qaAHyXqYqipdNbrgHGXb3P1djrP6" crossorigin="anonymous"></script>
 ```
 
 The following dists are available (with source maps):

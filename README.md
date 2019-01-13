@@ -4,6 +4,7 @@ better-promise-error-log
 [![npm package](https://nodei.co/npm/better-promise-error-log.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/better-promise-error-log/)
 
 [![NPM version][npm-version-badge]][npm-url]
+[![Minzipped size][minzipped-size-badge]][bundlephobia-url]
 [![License][license-badge]][license-url]
 [![NPM downloads][npm-downloads-badge]][npm-url]
 [![Dependency Status][dependency-status-badge]](https://david-dm.org/papb/better-promise-error-log)
@@ -112,6 +113,7 @@ MIT (c) Pedro Augusto de Paula Barbosa
 
 [npm-url]: https://npmjs.org/package/better-promise-error-log
 [npm-version-badge]: https://badgen.net/npm/v/better-promise-error-log
+[minzipped-size-badge]: https://badgen.net/bundlephobia/minzip/better-promise-error-log
 [dependency-status-badge]: https://badgen.net/david/dep/papb/better-promise-error-log
 [dev-dependency-status-badge]: https://badgen.net/david/dev/papb/better-promise-error-log
 [npm-downloads-badge]: https://badgen.net/npm/dt/better-promise-error-log
@@ -122,6 +124,7 @@ MIT (c) Pedro Augusto de Paula Barbosa
 [jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/better-promise-error-log/badge?style=rounded
 
 [license-url]: LICENSE
+[bundlephobia-url]: https://bundlephobia.com/result?p=better-promise-error-log
 [jsonify-error]: https://npmjs.org/package/jsonify-error
 
 [node-without]: https://i.imgur.com/J1xgzga.png

@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- ## [Unreleased] -->
 
+## [1.5.1] - 2019-05-01
+### Changed
+- Updated jsonifyError to 1.4.5 (no longer crashes on circular references)
+
 ## [1.5.0] - 2019-01-30
 ### Changed
 - Improved logging when reason is undefined
@@ -74,7 +78,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Initial version.
 
-[Unreleased]: https://github.com/papb/jsonify-error/compare/v1.5.0...HEAD
+[Unreleased]: https://github.com/papb/jsonify-error/compare/v1.5.1...HEAD
+[1.5.1]: https://github.com/papb/jsonify-error/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/papb/jsonify-error/compare/v1.4.5...v1.5.0
 [1.4.5]: https://github.com/papb/jsonify-error/compare/v1.4.4...v1.4.5
 [1.4.4]: https://github.com/papb/jsonify-error/compare/v1.4.3...v1.4.4

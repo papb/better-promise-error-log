@@ -16,7 +16,7 @@
     "build:es6-min": "uglifyjs dist/better-promise-error-log.js --compress --mangle --source-map -o dist/better-promise-error-log.min.js",
     "build:es5": "browserify --debug index.js -o dist/better-promise-error-log.es5.js -t [ babelify --presets [ \"babel-preset-env\" ] ]",
     "build:es5-min": "uglifyjs dist/better-promise-error-log.es5.js --compress --mangle --source-map -o dist/better-promise-error-log.es5.min.js",
-    "build:crlf": "node helpers/ensure-crlf.js",
+    "build:lf": "node helpers/ensure-lf.js",
     "build": "run-s build:*",
     "lint": "eslint .",
     "sri": "node helpers/sri-sha384.js"

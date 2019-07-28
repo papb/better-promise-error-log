@@ -6,9 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- ## [Unreleased] -->
 
+## [1.5.2] - 2019-07-27
+### Changed
+- Updated `jsonifyError` to 2.0.0 (now strips color control characters from strings)
+
 ## [1.5.1] - 2019-05-01
 ### Changed
-- Updated jsonifyError to 1.4.5 (no longer crashes on circular references)
+- Updated `jsonifyError` to 1.4.5 (no longer crashes on circular references)
 
 ## [1.5.0] - 2019-01-30
 ### Changed
@@ -16,7 +20,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.4.5] - 2019-01-13
 ### Changed
-- Updated jsonifyError to 1.4.3
+- Updated `jsonifyError` to 1.4.3
 - Added bundlephobia badges to README
 
 ## [1.4.4] - 2018-11-17
@@ -78,7 +82,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Initial version.
 
-[Unreleased]: https://github.com/papb/better-promise-error-log/compare/1.5.1...HEAD
+[Unreleased]: https://github.com/papb/better-promise-error-log/compare/1.5.2...HEAD
+[1.5.2]: https://github.com/papb/better-promise-error-log/compare/1.5.1...1.5.2
 [1.5.1]: https://github.com/papb/better-promise-error-log/compare/1.5.0...1.5.1
 [1.5.0]: https://github.com/papb/better-promise-error-log/compare/1.4.5...1.5.0
 [1.4.5]: https://github.com/papb/better-promise-error-log/compare/1.4.4...1.4.5

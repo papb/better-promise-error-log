@@ -27,10 +27,10 @@ This module uses the sibling module, [jsonify-error][jsonify-error], to prepare 
 For browsers, simply include one of the dists in your entry point. The dists are available in [jsDelivr](https://cdn.jsdelivr.net/npm/better-promise-error-log/):
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/better-promise-error-log@1.5.1/dist/better-promise-error-log.min.js" integrity="sha384-Q+LkmIUamDGF1TaL4yP4B02sLm+krrSWSCs/jZ9cECm7b2FrgfkFhZOI3LLS9rzm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/better-promise-error-log@1.5.2/dist/better-promise-error-log.min.js" integrity="sha384-cyUN0kjnDSNpcYRqS2sNJ6tDyzBAqtW/SwCtK9vDoGYREaHRXrdTsZVK7uwzd2Wl" crossorigin="anonymous"></script>
 ```
 
-They are also available as [GitHub release assets](https://github.com/papb/better-promise-error-log/releases/tag/1.5.1) (since 1.5.1). The following formats are available (with source maps):
+They are also available as [GitHub release assets](https://github.com/papb/better-promise-error-log/releases/tag/1.5.2) (since 1.5.1). The following formats are available (with source maps):
 
 * `better-promise-error-log.js`
 * `better-promise-error-log.min.js` (minified)
